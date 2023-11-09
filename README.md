@@ -1,9 +1,9 @@
-# Platomics Angular Take Home Assignment
+# Platomics Angular Challenge
 
-In this take home assignment we would like you to implement a basic UI which makes it possible to view a very large dataset.
+In this take home assignment we would like you to implement a basic UI which makes it possible to view a relatively large dataset.
 
 Some products that Platomics is working on is related to Next Generation Sequencing(NGS). In simplified terms, one of the goals of NGS is to detect mutations in a patients genome and classify them in terms of severity. These mutations are called variants. Since all humans are different we will always find variants so it is important to understand the impact of a variant and how high our confidence in detecting it is.
-The data which we use as an input for our variant detection(analysis) is called a sample. Samples are the output of a genetic sequencing machine(for example the Illumina HighSeq X) and are just a collection of strings which represent the bases(adenine (A), cytosine (C), guanine (G), thymine (T)) from a sniped of a gene. A single analysis will return on average 100.000 variants.
+The data which we use as an input for our variant detection(analysis) is called a sample. Samples are the output of a genetic sequencing machine(for example the Illumina HighSeq X) and are just a collection of strings which represent the bases(adenine (A), cytosine (C), guanine (G), thymine (T)) from a sub-part of a gene. A single analysis will return on average 100.000 variants.
 
 ## Technology stack ##
 
