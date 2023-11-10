@@ -17,6 +17,7 @@ We would like you to implement a simple UI to view a list of variants. When clic
 * 'Uncertain Significance'
 * 'Likely Pathogenic'
 * 'Pathogenic'
+* and `undefined` or `null`
 
 The enum for the classification states can be found in `./store/variants.state.ts`.
 This classification needs to be persisted in the applications state management. It should be possible to reduce the current list of variants by searching via variant name in an input field. A new variants batch should be loaded into the applications state management if the user either scrolls to the end of the variant list or if they click on a button located at the end of the list.
