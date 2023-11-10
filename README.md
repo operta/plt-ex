@@ -11,7 +11,16 @@ This take home assignment is focused on your frontend skills, particularly with 
 
 ## Goal of the take home assignment ##
 
-We would like you to implement a simple UI to view a list of variants. When clicking on a variant a detail view of this variant should open next to the list. It also should be possible for the user to provide a manual classification of a variant. This classification needs to be persisted in the applications state management. It should be possible to reduce the current list of variants by searching via variant name in an input field. A new variants batch should be loaded into the applications state management if the user either scrolls to the end of the variant list or if they click on a button located at the end of the list. You do not need to implement both of those interactions.
+We would like you to implement a simple UI to view a list of variants. When clicking on a variant a detail view of this variant should open next to the list. It also should be possible for the user to provide a manual classification of a variant. The classification states are:
+* 'Undefined',
+* 'Benign',
+* 'Likely Benign',
+* 'Uncertain Significance',
+* 'Likely Pathogenic',
+* 'Pathogenic'
+
+The enum for the classification states can be found in `./store/variants.state.ts`.
+This classification needs to be persisted in the applications state management. It should be possible to reduce the current list of variants by searching via variant name in an input field. A new variants batch should be loaded into the applications state management if the user either scrolls to the end of the variant list or if they click on a button located at the end of the list.
 
 We expect that this your provided implementation can handle 100.000 variants at the same time.
 
