@@ -18,7 +18,6 @@ interface Variant {
 }
 
 enum Classification {
-  'Undefined',
   'Benign',
   'Likely Benign',
   'Uncertain Significance',
@@ -74,7 +73,6 @@ export class VariantsState {
       ]),
       frequency: `${faker.number.int({ min: 1, max: 10 }) / 100}%`,
       pathogenicity: faker.helpers.arrayElement([
-        'Undefined',
         'Benign',
         'Likely Benign',
         'Uncertain Significance',
