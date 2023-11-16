@@ -11,7 +11,7 @@ This take home assignment is focused on your frontend skills, particularly with 
 
 ## Goal of the take home assignment ##
 
-We would like you to implement a simple UI to view a list of variants. When clicking on a variant a detail view of this variant should open next to the list. It also should be possible for the user to provide a manual classification of a variant. The classification states are:
+We would like you to implement a simple UI to view a list of variants. When clicking on a variant a detail view of this variant should open next to the list. It also should be possible for the user to provide a manual classification of a variant. Classification and pathogenicity are to separate values so a classification choice should not update the pathogenicity. The classification states are:
 * 'Benign'
 * 'Likely Benign'
 * 'Uncertain Significance'
