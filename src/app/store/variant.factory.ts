@@ -10,10 +10,10 @@ export function generateVariantBatch(size: number): Variant[] {
   return variants;
 }
 
-function generateVariant(): Variant {
+export function generateVariant(name?: string): Variant {
   return {
     id: faker.string.uuid(),
-    name: `Variant ${faker.lorem.word()}`,
+    name: !!name ? name : `Variant ${faker.lorem.word()}`,
     gene: faker.lorem.word(),
     location: `Chromosome ${faker.number.int(22)}:${faker.number.int(1000000)}`,
     variantType: faker.helpers.arrayElement([
