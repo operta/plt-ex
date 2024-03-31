@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { Variant } from '../../store/variants.model';
+import { Variant } from '../domain/variants.model';
 @Component({
   selector: 'app-variant-detail',
   template: `

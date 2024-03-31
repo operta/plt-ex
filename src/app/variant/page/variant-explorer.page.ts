@@ -5,7 +5,7 @@ import {
   FilterVariantsRequest,
   LoadVariantBatchRequest,
 } from '../store/variants.actions';
-import { Variant } from '../store/variants.model';
+import { Variant } from '../domain/variants.model';
 import { VariantsState } from '../store/variants.state';
 
 @Component({

@@ -1,23 +1,23 @@
 import { NgxsModule, Store } from '@ngxs/store';
 import { VariantsState, VariantsStateModel } from './variants.state';
 import { TestBed, waitForAsync } from '@angular/core/testing';
-import { ApiService } from '../service/api.service';
-import { generateVariant, generateVariantBatch } from './variant.factory';
+import { VariantService } from '../variant.service';
+import { generateVariant, generateVariantBatch } from '../domain/variant.factory';
 import { FilterVariantsRequest, LoadVariantBatchRequest } from './variants.actions';
 
 describe('Variant state actions', () => {
   let store: Store;
   let state: VariantsState;
-  let apiService: ApiService;
+  let apiService: VariantService;
 
   beforeEach(waitForAsync(() => {
     void TestBed.configureTestingModule({
       imports: [NgxsModule.forRoot([VariantsState])],
-      providers: [ApiService]
+      providers: [VariantService]
     }).compileComponents();
     store = TestBed.inject(Store);
     state = TestBed.inject(VariantsState);
-    apiService = TestBed.inject(ApiService);
+    apiService = TestBed.inject(VariantService);
   }));
 
   it('should initialize store', () => {

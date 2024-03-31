@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import { Variant } from '../../store/variants.model';
+import { Variant } from '../domain/variants.model';
 
 @Component({
   selector: 'app-variant-list',

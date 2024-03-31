@@ -3,12 +3,12 @@ import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatRadioChange, MatRadioModule } from '@angular/material/radio';
 import { Store } from '@ngxs/store';
-import { VariantClassified } from '../../store/variants.actions';
+import { VariantClassified } from '../store/variants.actions';
 import {
   Variant,
   VariantClass,
   getVariantClassOptions,
-} from '../../store/variants.model';
+} from '../domain/variants.model';
 
 @Component({
   selector: 'app-classify-variant',

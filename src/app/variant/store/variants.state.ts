@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
-import { ApiService } from '../service/api.service';
+import { VariantService } from '../variant.service';
 import {
   FilterVariantsRequest,
   LoadVariantBatchRequest,
   VariantClassified,
 } from './variants.actions';
-import { Variant } from './variants.model';
+import { Variant } from '../domain/variants.model';
 
 export interface VariantsStateModel {
   variants: Variant[];
@@ -23,7 +23,7 @@ export interface VariantsStateModel {
   },
 })
 export class VariantsState {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: VariantService) {}
 
   @Selector()
   static variants(state: VariantsStateModel): Variant[] {

@@ -1,4 +1,4 @@
-import { VariantClass } from './variants.model';
+import { VariantClass } from '../domain/variants.model';
 
 export class LoadVariantBatchRequest {
   static readonly type = '[Variants] Load variant batch request';

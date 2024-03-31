@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { NgxsModule } from '@ngxs/store';
-import { VariantsState } from './store/variants.state';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { VariantsState } from './store/variants.state';
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderComponent,
-    NgxsModule.forRoot([VariantsState])
+    NgxsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
